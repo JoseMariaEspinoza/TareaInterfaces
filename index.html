@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #FAF8F5;
+            color: #2C211B;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            margin-bottom: 1%;
+            height: 120px;
+
+        }
+
+        .logo-icono {
+            height: 180px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-texto {
+            height: 180px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #FAF8F5;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #2C211B;
+            padding: 12px 20px;
+        }
+
+        nav a:hover {
+            color: #FAF8F5;
+            background-color: #2C211B;
+        }
+
+        main>section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 2%;
+        }
+
+        .tarjeta-producto {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 30vw;
+            min-width: 260px;
+            max-width: 450px;
+            box-sizing: border-box;
+            padding: 18px;
+            margin: 15px;
+            border: 1px solid #2C211B;
+            border-radius: 4px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .tarjeta-producto:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px #2C211B;
+        }
+
+        button {
+
+            margin-top: auto;
+            background-color: #FAF8F5;
+            border: 1px solid #2C211B;
+            border-radius: 4px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #2C211B;
+            color: #FAF8F5;
+        }
+
+        footer {
+            background-color: #2C211B;
+            color: #FAF8F5;
+            padding: 18px;
+            margin: 15px;
+        }
+
+        footer a {
+            color: lightblue;
+        }
+
+        main section article img {
+            width: auto;
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo-icono.jpg" alt="logo-icono.jpg" class="logo-icono">
+        <img src="logo-texto.jpg" alt="logo-texto.jpg" class="logo-texto">
+    </header>
+    <nav id="menu">
+        <a href="">Novedades</a>
+        <a href="">Mujer</a>
+        <a href="">Hombre</a>
+        <a href="">Rebajas</a>
+    </nav>
+    <main>
+        <section>
+            <article class="tarjeta-producto">
+                <img src="camisa-hombre.jpg" alt="camisa-hombre.jpg">
+                <h2>Camisa Hombre</h2>
+                <p>15€</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="tarjeta-producto">
+                <img src="camisa-mujer.jpg" alt="camisa-mujer.jpg">
+                <h2>Camisa Mujer</h2>
+                <p>10€</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="tarjeta-producto">
+                <img src="traje.jpg" alt="traje.jpg">
+                <h2>Traje</h2>
+                <p>100€</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="tarjeta-producto">
+                <img src="vestido.jpg" alt="vestido.jpg">
+                <h2>Vestido</h2>
+                <p>50€</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="tarjeta-producto">
+                <img src="zapatos-hombre.jpg" alt="zapatos-hombre.jpg">
+                <h2>Zapato Hombre</h2>
+                <p>45€</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="tarjeta-producto">
+                <img src="zapatos-mujer.jpg" alt="zapatos-mujer.jpg">
+                <h2>Zapato mujer</h2>
+                <p>35€</p>
+                <button>Añadir al carrito</button>
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>¿Dudas con tu pedido? Escríbenos a <a href="">info@vestia.com</a> o llámanos al <a href="">+34 900 000
+                000</a></p>
+        <p>Horario: Lunes a Viernes de 9:00 a 18:00</p>
+        <hr>
+        <p>© 2026 Vestia — Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
