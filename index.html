@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: #FAF8F5;
-            color: #2C211B;
-        }
+        body {background-color: #FAF8F5; color: #2C211B;}
 
         header {
             display: flex;
@@ -21,28 +18,6 @@
 
         }
 
-        .logo-icono {
-            height: 180px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .logo-texto {
-            height: 180px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        #menu {
-            display: flex;
-            justify-content: space-around;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            background-color: #FAF8F5;
-        }
-
         nav a {
             display: inline-block;
             text-decoration: none;
@@ -50,10 +25,7 @@
             padding: 12px 20px;
         }
 
-        nav a:hover {
-            color: #FAF8F5;
-            background-color: #2C211B;
-        }
+        nav a:hover {color: #FAF8F5; background-color: #2C211B;}
 
         main>section {
             display: flex;
@@ -61,6 +33,31 @@
             justify-content: space-around;
             padding-top: 2%;
         }
+        
+        main section article img {width: auto; height: 360px;}
+
+        button {
+
+            margin-top: auto;
+            background-color: #FAF8F5;
+            border: 1px solid #2C211B;
+            border-radius: 4px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {background-color: #2C211B; color: #FAF8F5;}
+
+        footer {
+            background-color: #2C211B;
+            color: #FAF8F5;
+            padding: 18px;
+            margin: 15px;
+        }
+
+        footer a {color: lightblue;}
+
+        .logo-icono, .logo-texto { height: 180px; width: auto; object-fit: contain;}
+        
 
         .tarjeta-producto {
             display: flex;
@@ -76,39 +73,16 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .tarjeta-producto:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px #2C211B;
-        }
+        .tarjeta-producto:hover {transform: translateY(-4px); box-shadow: 0 8px 20px #2C211B;}
 
-        button {
-
-            margin-top: auto;
+        #menu {
+            display: flex;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
             background-color: #FAF8F5;
-            border: 1px solid #2C211B;
-            border-radius: 4px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        button:hover {
-            background-color: #2C211B;
-            color: #FAF8F5;
-        }
-
-        footer {
-            background-color: #2C211B;
-            color: #FAF8F5;
-            padding: 18px;
-            margin: 15px;
-        }
-
-        footer a {
-            color: lightblue;
-        }
-
-        main section article img {
-            width: auto;
-            height: 360px;
         }
     </style>
 </head>
